@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class
+        name="com.example.android_project03.BluetoothService.ConnectedThread"
+        x="386" y="349">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.example.android_project03.MainActivity" x="54" y="174">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.example.android_project03.BluetoothService"
+            endpointName="mBluetoothService" kind="Simple"/>
+        <Communication destinationClassName="com.example.android_project03.BluetoothService"/>
+    </Class>
+    <Class name="com.example.android_project03.BluetoothService" x="628" y="140">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.example.android_project03.BluetoothService.ConnectThread"
+            endpointName="mConnectThread" kind="Simple"/>
+        <Association
+            destinationClassName="com.example.android_project03.BluetoothService.ConnectedThread"
+            endpointName="mConnectedThread" kind="Simple"/>
+        <Communication destinationClassName="com.example.android_project03.BluetoothService.ConnectedThread"/>
+        <Communication destinationClassName="com.example.android_project03.BluetoothService.ConnectThread"/>
+    </Class>
+    <Class
+        name="com.example.android_project03.BluetoothService.ConnectThread"
+        x="336" y="69">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.example.android_project03.BluetoothService"/>
+    </Class>
+</ClassDiagram>

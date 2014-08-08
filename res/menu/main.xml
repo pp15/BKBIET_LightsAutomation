@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/itemReconn"
+        android:title="New Connection">
+    </item>
+    <item
+        android:id="@+id/itemDisconn"
+        android:title="Disconnection">
+    </item>
+
+</menu>

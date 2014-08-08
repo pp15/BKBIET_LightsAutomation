@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <CommunicationClass
+        name="com.example.android_project03.BluetoothService.ConnectedThread"
+        x="296" y="321"/>
+    <CommunicationClass
+        name="com.example.android_project03.MainActivity" x="193" y="166">
+        <Association
+            destinationClassName="com.example.android_project03.BluetoothService"
+            endpointName="mBluetoothService" kind="Simple"/>
+        <Communication destinationClassName="com.example.android_project03.BluetoothService"/>
+    </CommunicationClass>
+    <CommunicationClass
+        name="com.example.android_project03.BluetoothService" x="443" y="166">
+        <Association
+            destinationClassName="com.example.android_project03.BluetoothService.ConnectThread"
+            endpointName="mConnectThread" kind="Simple"/>
+        <Association
+            destinationClassName="com.example.android_project03.BluetoothService.ConnectedThread"
+            endpointName="mConnectedThread" kind="Simple"/>
+        <Communication destinationClassName="com.example.android_project03.BluetoothService.ConnectedThread"/>
+        <Communication destinationClassName="com.example.android_project03.BluetoothService.ConnectThread">
+            <Point x="497" y="339"/>
+        </Communication>
+    </CommunicationClass>
+    <CommunicationClass
+        name="com.example.android_project03.BluetoothService.ConnectThread"
+        x="572" y="322">
+        <Communication destinationClassName="com.example.android_project03.BluetoothService">
+            <Point x="627" y="181"/>
+        </Communication>
+    </CommunicationClass>
+</ClassDiagram>
